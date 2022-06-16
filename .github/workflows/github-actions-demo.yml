@@ -14,9 +14,6 @@ jobs:
       - run: echo "🖥️ The workflow is now ready to test your code on the runner."
       - name: List files in the repository
         run: |
-            velero install \
-             --plugins velero/velero-plugin-for-aws:v1.0.1 \
-             --bucket <bucketname>\>
-             --backup-location-config region=<region> \
-             --snapshot-location-config region=<region> \
-             --secret-file /root/.aws/credentials
+            echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!" \
+             --echo $SHELL1 \
+             --echo "🎉 The job was automatically triecho "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"backup-location-config region=<region> \
