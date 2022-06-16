@@ -15,8 +15,8 @@ jobs:
       - name: List files in the repository
         run: |
             velero install \
->       -plugins velero/velero-plugin-for-aws:v1.0.1 \
->     --bucket <bucketname>\
->     --backup-location-config region=<region> \
->     --snapshot-location-config region=<region> \
->     --secret-file /root/.aws/credentials
+             --plugins velero/velero-plugin-for-aws:v1.0.1 \
+             --bucket <bucketname>\>
+             --backup-location-config region=<region> \
+             --snapshot-location-config region=<region> \
+             --secret-file /root/.aws/credentials
